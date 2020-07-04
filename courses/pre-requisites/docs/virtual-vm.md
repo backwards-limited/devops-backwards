@@ -165,3 +165,71 @@ CentOS Linux release 7.7.1908 (Core)
 cpe:/o:centos:centos:7
 ```
 
+## Multiple VMs
+
+![Clone](images/clone.png)
+
+---
+
+![Clone 2](images/clone2.png)
+
+---
+
+![Linked clone](images/linked-clone.png)
+
+---
+
+![Host network manager](images/host-network-manager.png)
+
+---
+
+![vboxnet3](images/vboxnet3.png)
+
+Do the following **Settings** for both VMs (or how every many you have):
+
+![VM1 settings](images/vm1-settings.png)
+
+---
+
+![Host only adapter setting](images/host-only-adpater-setting.png)
+
+And boot both VMs:
+
+![VM1 IP](images/vm1-ip.png)
+
+---
+
+![VM 2 IP](images/vm2-ip.png)
+
+And our **host** is also part of the network:
+
+```bash
+devops-backwards at ☸️ docker-desktop
+➜ ifconfig
+...
+vboxnet3: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	ether 0a:00:27:00:00:03
+	inet 192.168.99.1 netmask 0xffffff00 broadcast 192.168.99.255
+```
+
+We can now **ping** and **ssh** without **port forwarding**:
+
+```bash
+devops-backwards at ☸️ docker-desktop
+➜ ping 192.168.99.146
+PING 192.168.99.146 (192.168.99.146): 56 data bytes
+64 bytes from 192.168.99.146: icmp_seq=0 ttl=64 time=0.331 ms
+```
+
+```bash
+devops-backwards at ☸️ docker-desktop took 5s
+➜ ssh root@192.168.99.146
+The authenticity of host '192.168.99.146 (192.168.99.146)' can't be established.
+ECDSA key fingerprint is SHA256:G3cC7AxGrKHjrjB1ZLCeSKMWh0qKb0jFOenWFFyYnrY.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.99.146' (ECDSA) to the list of known hosts.
+root@192.168.99.146's password:
+Last login: Sun Jun 28 17:59:27 2020 from 10.0.2.2
+[root@osboxes ~]#
+```
+
