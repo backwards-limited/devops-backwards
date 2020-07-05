@@ -4,4 +4,5 @@
 
 - [Linux](docs/linux.md)
 - [Virtual VM](docs/virtual-vm.md)
+- [Vagrant](docs/vagrant.md)
 
