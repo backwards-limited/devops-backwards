@@ -34,6 +34,17 @@ there
 <Ctl-D>
 ```
 
+You can also do it this way:
+
+```bash
+workspace/backwards/devops-backwards at ☸️ docker-desktop
+➜ cat > index.html <<EOF
+> This is a sample file
+> EOF
+```
+
+
+
 ## VI Editor
 
 - Command mode (default - such as upon opening a file)

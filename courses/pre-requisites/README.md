@@ -9,3 +9,5 @@
 - [DNS](docs/dns.md)
 - [Application Basics](docs/application-basics.md)
 - [GIT](docs/git.md)
+- [Web Servers](docs/web-servers.md)
+
