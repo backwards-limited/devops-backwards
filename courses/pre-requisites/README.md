@@ -10,4 +10,6 @@
 - [Application Basics](docs/application-basics.md)
 - [GIT](docs/git.md)
 - [Web Servers](docs/web-servers.md)
+- [Databases](docs/databases.md)
+- [SSL & TLS](docs/ssl-tls.md)
 

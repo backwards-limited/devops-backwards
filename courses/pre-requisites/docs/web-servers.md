@@ -19,6 +19,16 @@ service httpd status
 
 ![Apache DNS](images/apache-dns.png)
 
+## Tomcat
+
+Let's run Apache Tomcat` on `all IP interfaces` and port `9090, where Tomcat is installed under /opt/apache-tomcat-8.5.53 (noting that Tomcat by default listens to all IP interfaces):
+
+```bash
+/opt$ sudo sed -i 's/8080/9090/g' apache-tomcat-8.5.53/conf/server.xml
+
+/opt$ sudo ./apache-tomcat-8.5.53/bin/startup.sh
+```
+
 ## Python Flask
 
 Typical Python Flask setup:
