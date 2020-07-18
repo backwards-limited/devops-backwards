@@ -44,7 +44,7 @@ The idea is that we encrypt (lock) data with the **public lock** and can then on
 
 ![Unlock](images/asymmetric-unlock.png)
 
-#### SSH
+#### <u>SSH</u>
 
 We can use **key pairs** for **ssh** instead of user / password - so we need to generate a public and private key pair - The steps are:
 
@@ -60,7 +60,7 @@ And you can copy your **public key** onto multiple servers and still use the sam
 
 ![SSH multiple users](images/ssh-multiple-users.png)
 
-#### Client / Server
+#### <u>Client / Server</u>
 
 Ok. Back to the client / server example using asymmetric encryption.
 
