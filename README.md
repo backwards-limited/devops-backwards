@@ -6,6 +6,7 @@
 
 - Courses
 
-  - [Pre-Requisites](courses/pre-requisites/README.md)
+  - [Pre-Requisites](courses/1-pre-requisites/README.md)
+  - [Linux Basics](courses/2-linux-basics/README.md)
   
 
