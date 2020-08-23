@@ -36,3 +36,19 @@ To search within files, use **GREP**:
 
 ![GREP](images/grep-even-more.png)
 
+## IO Redirection
+
+![Redirect stdout](images/redirect-stdout.png)
+
+---
+
+![Redirect stderror](images/redirect-stderror.png)
+
+---
+
+![Command line pipe](images/command-line-pipe.png)
+
+---
+
+![Tee](images/tee.png)
+
