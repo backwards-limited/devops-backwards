@@ -9,4 +9,6 @@
 - [Security](docs/security.md)
 - [SSH](docs/ssh.md)
 - [Networking](docs/networking.md)
+- [Storage](docs/storage.md)
+- [Service Management](docs/service-management.md)
 
