@@ -153,3 +153,12 @@ Example of **service**:
 Example of **lineinfile** which also shows off Ansibles **idempotency** because running a script would keep incorrectly adding lines:
 
 ![Lineinfile](images/lineinfile.png)
+
+## Variables
+
+![Variables](images/variables.png)
+
+---
+
+![More variables](images/more-variables.png)
+
