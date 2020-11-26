@@ -10,3 +10,4 @@
     - [Git](courses/3-git/README.md)
     - [Shell Scripting](courses/4-shell-scripting/README.md)
     - [Ansible](courses/5-ansible/README.md)
+    - [Docker](courses/6-docker/README.md)
