@@ -6,3 +6,5 @@
 - [YAML](docs/yaml.md)
 - [Ansible Concepts](docs/concepts.md)
 - [Conditionals, Loops & Roles](docs/conditionals-loops-roles.md)
+- [Advanced Topics](docs/advanced-topics.md)
+
