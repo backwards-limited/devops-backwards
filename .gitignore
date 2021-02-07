@@ -111,9 +111,14 @@ multi-k8s-service-account.json
 *.credentials
 
 .terraform
+.terraform/
+**/.terraform/*
 backwards-terraform
-terraform.tfvars
-terraform.tfstate.backup
+*.tfvars
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+*.tfstate.*
 private_ips.txt
 
 kubernetes-mastery-on-aws/k8s/course-yaml

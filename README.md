@@ -11,3 +11,4 @@
     - [Shell Scripting](courses/4-shell-scripting/README.md)
     - [Ansible](courses/5-ansible/README.md)
     - [Docker](courses/6-docker/README.md)
+    - [Terraform](courses/7-terraform/README.md)
