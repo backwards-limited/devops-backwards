@@ -239,3 +239,5 @@ EOF
 ```bash
 ➜ terraform apply
 ```
+
+## DynamoDB
