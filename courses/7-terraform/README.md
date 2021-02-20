@@ -8,3 +8,4 @@
 - [Working with Terraform](docs/working-with-terraform.md)
 - [AWS](docs/aws.md)
 - [AWS and Terraform](docs/aws-and-terraform.md)
+- [Remote State](docs/remote-state.md)
