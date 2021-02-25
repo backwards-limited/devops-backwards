@@ -45,3 +45,7 @@ rm -rf terraform.tfstate
 ```
 
 ## Terraform State Commands
+
+To manipulate `state` use state commands and do not edit:
+
+![Manipulate state](images/manipulate-state.jpg)
