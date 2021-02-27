@@ -10,3 +10,4 @@
 - [AWS and Terraform](docs/aws-and-terraform.md)
 - [Remote State](docs/remote-state.md)
 - [Provisioners](docs/provisioners.md)
+- [Importing](docs/importing.md)

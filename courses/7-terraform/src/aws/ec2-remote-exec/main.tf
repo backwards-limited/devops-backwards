@@ -7,19 +7,24 @@ resource "aws_instance" "webserver" {
     Description = "An Nginx WebServer on Ubuntu"
   }
 
-  user_data = file("nginx.sh")
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt update",
+      "sudo apt install nginx -y",
+      "sudo systemctl enable nginx",
+      "sudo systemctl start nginx"
+    ]
+  }
+
+  connection {
+    type = "ssh"
+    host = self.public_ip
+    user = "ec2-user"
+    private_key = file("/Users/davidainslie/temp/temp-key")
+  }
 
   key_name = aws_key_pair.web.id
   vpc_security_group_ids = [aws_security_group.ssh-access.id]
-}
-
-resource "aws_eip" "eip" {
-  vpc = true
-  instance = aws_instance.webserver.id
-
-  provisioner "local-exec" {
-    command = "echo ${aws_eip.eip.private_dns} >> /Users/davidainslie/temp/webserver-dns.txt"
-  }
 }
 
 resource "aws_key_pair" "web" {
