@@ -11,3 +11,4 @@
 - [Remote State](docs/remote-state.md)
 - [Provisioners](docs/provisioners.md)
 - [Importing](docs/importing.md)
+- [Modules](docs/modules.md)
