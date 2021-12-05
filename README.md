@@ -12,3 +12,4 @@
     - [Ansible](courses/5-ansible/README.md)
     - [Docker](courses/6-docker/README.md)
     - [Terraform](courses/7-terraform/README.md)
+    - [Terraform in Action](courses/8-terraform-in-action/README.md)
