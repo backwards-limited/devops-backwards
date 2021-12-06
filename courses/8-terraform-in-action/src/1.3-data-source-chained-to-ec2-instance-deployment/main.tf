@@ -36,7 +36,7 @@ provider "aws" {
 /*
 A data source allows you to fetch data at runtime and perform calculations.
 Data sources are unmanaged resources that Terraform can read from but that Terraform doesn't directly control.
-Here we have a data source that dynamically looks up the latest Ubuntu AMI published on AWS.
+Here we have a data source that dynamically looks up the latest Linux AMI published on AWS.
 */
 data "aws_ami" "amazon_linux" {
   most_recent = true
@@ -72,23 +72,18 @@ There are also computed attributes that are only available after the resource ha
      ARGUMENTS                                 ATTRIBUTES
                       +-----------------+
                       |                 |
-                      |                 |
            ami ------->                 +----> ami
                       |                 |
-                      |                 |
 instance_type -------->                 +----> instance_tye
-                      |                 |
                       |                 |
          tags -------->                 +----> tags
                       |                 |
                       |  aws_instance   |
-                      |                 |
                       |                 |          ---+
                       |                 +----> id     |
                       |                 |             +---Computed
                       |                 |             |   attributes
                       |                 +----> arn ---+
-                      |                 |
                       |                 |
                       +-----------------+
 */
