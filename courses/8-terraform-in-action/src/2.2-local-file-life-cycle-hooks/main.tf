@@ -44,3 +44,24 @@ terraform show -json plan.out > plan.json
 Apply with shortcut
 terraform apply -auto-approve
 */
+
+/*
+What about configuration drift e.g. we manually change the text file?
+Let's change "Sun Tzu" with "Napoleon".
+
+Well want we want to do is:
+terraform refresh
+
+You can think of terraform refresh like a terraform plan that also alters the state file.
+It’s a read-only operation that does not modify managed existing infrastructure — just Terraform state.
+
+Then:
+terraform apply -auto-approve
+
+And now our file is restored.
+*/
+
+/*
+To finally finish off our work:
+terraform destroy -auto-approve
+*/
